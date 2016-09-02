@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="../js/app/app.js"></script>
+<script src="../js/controllers/series/SeriesController.js"></script>
+<script src="../js/factories/series/SeriesFactory.js"></script>
+
+<body ng-app="Screen">
+<div class="container" id="series">
+	<div ng-controller="SeriesController as Sc" ng-init="Sc.getAllSeries()">
+		</div>	
+	</div>
+</body>
+</html>

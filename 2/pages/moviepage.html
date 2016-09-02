@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link rel="stylesheet" href="../css/homeStyle.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="../js/app/app.js"></script>
+<script src="../js/controllers/movies/FlicksController.js"></script>
+<script src="../js/factories/movies/movieFactory.js"></script>
+
+<body ng-app="Screen">
+	<div class="movies" ng-controller="FlicksController as Fc" ng-init="Fc.getAllMovies()">
+		 <div class="movie" ng-repeat="movie in Fc.popularMovies" class="movieDisplay">
+       <img Height="365px" Width="245px" style="position:absolute;" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{movie.poster_path}}">
+	</div>
+	</div>
+</body>
+</html>
